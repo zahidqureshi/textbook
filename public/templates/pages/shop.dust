@@ -1,0 +1,34 @@
+{>"layouts/master" /}
+
+{<body}
+<div class="container-fluid">
+    		<div class="row">
+            {#books}
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="product">
+    					<a href="/books/details/{._id}" class="img-prod"><img class="img-fluid" src="/img/{.cover}" alt="{.title}"></a>
+    					<div class="text py-3 px-3">
+    						<h3><a href="/books/details/{._id}">{.title}</a></h3>
+    						<div class="d-flex">
+    							<div class="pricing">
+		    						<p class="price"><span class="mr-2 price-dc">{.price}</span></p>
+		    					</div>
+		    					<div class="rating">
+	    							<p class="text-right">
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    								<span class="ion-ios-star-outline"></span>
+	    							</p>
+	    						</div>
+	    					</div>
+	    					<hr>
+    					</div>
+    				</div>
+    			</div>
+            {/books}
+    		</div>
+    	</div>
+
+        {/body}

@@ -1,0 +1,27 @@
+{>"layouts/manage" /}
+{<body}
+  <h2> Books </h2>
+  <a href="/manage/books/add"> Add Book </a>
+  <table>
+    <thead>
+      <tr>
+        <th width="200">ID</th>
+        <th width="150">Book Title</th>
+        <th width="150">Category</th>
+        <th width="150"></th>
+        <th width="150"></th>
+      </tr>
+    </thead>
+      {#books}
+        <tbody>
+          <tr>
+            <td>{.id}</td>
+            <td>{.title}</td>
+            <td>{.category}</td>
+            <td><a class="button tiny" href="/manage/books/edit/{.id}">Edit</a></td>
+            <td><a class="button tiny alert removeBook" data-id="{.id}" href="/manage/books/delete/{.id}">Delete</a></td>
+          </tr>
+        </tbody>
+      {/books}
+  </table>
+{/body}
