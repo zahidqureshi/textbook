@@ -21,7 +21,7 @@
     "express-messages": "^1.0.1",
     "kraken-js": "^2.0.0",
     "makara": "^2.0.3",
-    "mongodb": "^3.0.10",
+    "mongodb": "^3.1.13",
     "mongoose": "^5.6.10",
     "requirejs": "^2.3.5"
   },
